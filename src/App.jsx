@@ -2,7 +2,7 @@ import { useState } from "react";
 
 const ACCESS_CODE = "CAPTIONLAB2024";
 const CONTACT_EMAIL = "hello@captionlabhq.com";
-const GUMROAD_URL = "https://captionlab26.gumroad.com/l/dcsuv";h
+const GUMROAD_URL = "https://captionlab26.gumroad.com/l/dcsuv";
 
 const TONES = ["Professional","Casual & Fun","Inspirational","Witty & Edgy","Storytelling","Luxury Brand"];
 const PLATFORMS = ["Instagram","TikTok","LinkedIn","Twitter/X","Facebook","YouTube"];
