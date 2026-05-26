@@ -9,7 +9,7 @@ const PLATFORMS = ["Instagram","TikTok","LinkedIn","Twitter/X","Facebook","YouTu
 const CONTENT_TYPES = ["Product/Service","Motivational Quote","Behind the Scenes","Tutorial/Tips","Announcement","Personal Story"];
 
 const TESTIMONIALS = [
-  { name: "Sarah M.", role: "Content Creator · 84K followers", text: "I was spending 2 hours every single day writing captions. CaptionLab cut that to 10 minutes. My engagement is actually up because I'm posting more consistently.", stars: 5 },
+  { name: "Sarah M.", role: "Content Creator · 84K followers", text: "I was shpending 2 hours every single day writing captions. CaptionLab cut that to 10 minutes. My engagement is actually up because I'm posting more consistently.", stars: 5 },
   { name: "Marcus T.", role: "Small Business Owner · E-commerce", text: "My LinkedIn engagement went up 40% the first month. The tone modes are exactly what I needed — I can sound professional without sounding robotic.", stars: 5 },
   { name: "Jess R.", role: "Freelance Social Media Manager", text: "I manage 8 clients across different industries. CaptionLab is now non-negotiable in my workflow. It pays for itself ten times over every month.", stars: 5 },
   { name: "Daniel K.", role: "Restaurant Owner · Miami", text: "We used to pay an agency $500/month for captions. Now I do it myself in minutes and it's honestly better. Huge win for our small business.", stars: 5 },
@@ -789,7 +789,7 @@ Respond ONLY with a valid JSON object — no markdown, no backticks, no explanat
   "hashtags": "10 relevant hashtags for ${platform} as a single line starting with #"
 }`;
 
-      const res = await fetch("/api/generate", {
+      const res = await fetch("/.netlify/functions/generate", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
